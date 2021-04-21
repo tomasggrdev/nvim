@@ -149,7 +149,7 @@ let g:lightline = {
       \  },
       \ 'component': {
       \  'bufnum': '%n',
-      \  'inactive': 'inactive'
+      \  'inactive': 'Inactive'
       \ },
       \ 'component_function': {
       \  'gitbranch': 'fugitive#head',
