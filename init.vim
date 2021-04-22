@@ -40,7 +40,7 @@ Plug 'vimlab/split-term.vim'
 "Comentarios
 Plug 'preservim/nerdcommenter'
 "Tema de ayu 
-Plug 'ayu-theme/ayu-vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 "Easymotion
 Plug 'easymotion/vim-easymotion'
 "Nerdtree
@@ -121,8 +121,7 @@ endif
 let g:closetag_shortcut = '<enter>'
 "Configuraciones automáticas
 "Asignar el color del tema
-let ayucolor = "mirage"
-colorscheme  ayu
+colorscheme onehalfdark 
 "Cerramos el nerdtree al abrir un archivo
 let NERDTreeQuitOnOpen=1
 "Configurar kite, autocompletado para JS y Python
@@ -155,7 +154,7 @@ let g:lightline = {
       \  'gitbranch': 'fugitive#head',
       \  'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'ayu',
+      \ 'colorscheme': 'onehalfdark',
       \ 'subseparator': {
       \     'left': '',
       \     'right': ''
