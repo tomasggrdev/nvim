@@ -117,8 +117,6 @@ if &filetype == "javascript"  || &filetype == "python"
 else
     inoremap <silent><expr> <c-space> coc#refresh()
 endif
-"Configurar closetag
-let g:closetag_shortcut = '<enter>'
 "Configuraciones automáticas
 "Asignar el color del tema
 colorscheme onehalfdark 
@@ -180,7 +178,7 @@ endfunction
 set autoread
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 "Agregar auto tabs con nerdtree
-let NERDTreeMapOpenInTab='<ENTER>'
+let NERDTreeMapOpenInTab='<leader>t'
 "Ir a cada tab usando la letra principal más el número
 noremap <leader>1 1gt
 noremap <leader>2 2gt
