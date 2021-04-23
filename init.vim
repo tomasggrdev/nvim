@@ -74,8 +74,6 @@ Plug 'ap/vim-css-color'
 Plug 'ryanoasis/vim-devicons'
 "Git
 Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
-"Closetags
-Plug 'alvan/vim-closetag'
 "Multiple-cursors
 Plug 'terryma/vim-multiple-cursors'
 call plug#end()
