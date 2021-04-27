@@ -15,8 +15,6 @@ let g:kite_supported_languages = ['javascript', 'python']
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 autocmd FileType * RainbowParentheses
-"Configurar Kite
-let g:kite_supported_languages = ['javascript', 'python']
 "Configurar CoC
 autocmd FileType python let b:coc_suggest_disable = 1
 autocmd FileType javascript let b:coc_suggest_disable = 1
