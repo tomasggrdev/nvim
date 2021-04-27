@@ -32,5 +32,9 @@ filetype plugin indent on
 set shiftwidth=2
 set tabstop=2
 set expandtab
+filetype indent on
+set smartindent
+autocmd BufRead,BufWritePre *.sh normal gg=G
 "Copiar al portapapeles por defecto
 set clipboard=unnamedplus
+set scrolloff=6
