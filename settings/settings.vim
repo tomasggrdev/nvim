@@ -5,10 +5,8 @@ set title
 "Mostrar número de la línea
 set number
 "Permitir el mouse
-set mouse=v
+set mouse=a
 set numberwidth=1
-"Permitir pegar en modo insertar
-set clipboard=unnamedplus
 "Comando para colocar VTerm abajo
 set splitbelow
 "Autoguardado
@@ -35,3 +33,5 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
+"Copiar al portapapeles por defecto
+set clipboard=unnamedplus
