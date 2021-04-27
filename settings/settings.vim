@@ -28,10 +28,9 @@ set laststatus=2
 "Ver la linea actual en la que se está parado
 set cursorline
 "autoindent al dar enter
+filetype plugin indent on
+set shiftwidth=2
+set tabstop=2
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set autoindent
-set smartindent
 "Copiar al portapapeles por defecto
 set clipboard=unnamedplus
