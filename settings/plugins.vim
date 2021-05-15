@@ -3,8 +3,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'vimlab/split-term.vim'
 "Comentarios
 Plug 'preservim/nerdcommenter'
-"Tema de ayu 
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
+"Tema de gruvbox
+Plug 'morhetz/gruvbox'
 "Easymotion
 Plug 'easymotion/vim-easymotion'
 "Nerdtree
@@ -12,7 +12,8 @@ Plug 'preservim/nerdtree'
 "Navegar entre archivos
 Plug 'christoomey/vim-tmux-navigator'
 "Linea de estado
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 "Autocompletar paréntesis
 Plug 'Raimondi/delimitMate'
 "Instalar live server
@@ -22,13 +23,11 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'branch': 'release/0.x'
   \ }
-"Color picker
-Plug 'KabbAmine/vCoolor.vim'
 "Color parentesís
 Plug 'junegunn/rainbow_parentheses.vim'
 "Emmet
 Plug 'mattn/emmet-vim'
-"Coc autocomplete CocInstall coc-html coc-tssserver coc-json coc-css
+"Coc autocomplete CocInstall coc-html coc-tsserver coc-json coc-css
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Colores para el css
 Plug 'ap/vim-css-color'
@@ -38,4 +37,5 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
 "Multiple-cursors
 Plug 'terryma/vim-multiple-cursors'
+
 call plug#end()

@@ -1,63 +1,32 @@
-"Si no estamos trabajando con kite podemos llamar a CoC
-if &filetype == "javascript"  || &filetype == "python"
-    inoremap <c-space> <C-x><C-u>
-else
-    inoremap <silent><expr> <c-space> coc#refresh()
-endif
 "Configuraciones automáticas
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 "Asignar el color del tema
-colorscheme onehalfdark 
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
+set bg=dark
+let g:airline_theme = 'gruvbox'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 "Cerramos el nerdtree al abrir un archivo
 let NERDTreeQuitOnOpen=1
-"Configurar kite, autocompletado para JS y Python
-let g:kite_supported_languages = ['javascript', 'python']
 "Color paréntesis
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 autocmd FileType * RainbowParentheses
-"Configurar CoC
-autocmd FileType python let b:coc_suggest_disable = 1
-autocmd FileType javascript let b:coc_suggest_disable = 1
-autocmd FileType scss setl iskeyword+=@-@
-
-"Configurar barra de estado
-let g:lightline = {
-      \ 'active': {
-      \   'left': [['mode', 'paste' ],[], ['relativepath', 'modified']],
-      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
-      \ },
-      \ 'inactive': {
-      \ 'left': [['inactive'], ['relativepath']],
-      \ 'right': [['bufnum']]
-      \  },
-      \ 'component': {
-      \  'bufnum': '%n',
-      \  'inactive': 'Inactive'
-      \ },
-      \ 'component_function': {
-      \  'gitbranch': 'fugitive#head',
-      \  'kitestatus': 'kite#statusline'
-      \ },
-      \ 'colorscheme': 'onehalfdark',
-      \ 'subseparator': {
-      \     'left': '',
-      \     'right': ''
-      \ }
-      \ }
 
 "Auto indent al dar enter
-inoremap <expr> <CR> InsertMapForEnter()
-function! InsertMapForEnter()
-    if pumvisible()
-        return "\<C-y>"
-    elseif strcharpart(getline('.'),getpos('.')[2]-1,1) == '}'
-        return "\<CR>\<Esc>O"
-    elseif strcharpart(getline('.'),getpos('.')[2]-1,2) == '</'
-        return "\<CR>\<Esc>O"
-    else
-        return "\<CR>"
-    endif
-endfunction
+"inoremap <expr> <CR> InsertMapForEnter()
+"function! InsertMapForEnter()
+    "if pumvisible()
+        "return "\<C-y>"
+    "elseif strcharpart(getline('.'),getpos('.')[2]-1,1) == '}'
+        "return "\<CR>\<Esc>O"
+    "elseif strcharpart(getline('.'),getpos('.')[2]-1,2) == '</'
+        "return "\<CR>\<Esc>O"
+    "else
+        "return "\<CR>"
+    "endif
+"endfunction
 
 "Auto recarga en nerdtree
 "trigger `autoread` when files changes on disk
@@ -68,3 +37,4 @@ let NERDTreeMapOpenInTab='<leader>t'
 "notification after file change
  autocmd FileChangedShellPost *
  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+

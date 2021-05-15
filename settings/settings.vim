@@ -1,40 +1,44 @@
-"Transparencia en neovim
-au ColorScheme * hi Normal ctermbg=none guibg=none
-"Mostrar titulo
-set title
-"Mostrar número de la línea
-set number
-"Permitir el mouse
-set mouse=a
-set numberwidth=1
-"Comando para colocar VTerm abajo
-set splitbelow
-"Autoguardado
-autocmd BufLeave,FocusLost * silent! wall
-"Codificacion UTF
-set encoding=utf-8
-"Configuración para que el tema funcione bien
-set termguicolors
-"Ver cuantas lineas hay por debajo de la línea actual
-set relativenumber
-"Reconocer la sintaxis
-syntax enable
-"Ver la posición del cursos, linea y carácter
-set showcmd
-set ruler
-"Ver el estado de vim, normal, visual, insertar
-set noshowmode
-set laststatus=2
-"Ver la linea actual en la que se está parado
-set cursorline
-"autoindent al dar enter
-filetype plugin indent on
-set shiftwidth=2
-set tabstop=2
-set expandtab
-filetype indent on
-set smartindent
-autocmd BufRead,BufWritePre *.sh normal gg=G
-"Copiar al portapapeles por defecto
-set clipboard=unnamedplus
-set scrolloff=6
+" @Author: Edwz-Dev
+" Youtube : https://www.youtube.com/channel/UC8Fv2rHCAztH0Dd2BqzOLVg
+" Linkedin : https://www.linkedin.com/in/edwinjpr11/
+" Github : https://github.com/edwz-dev
+
+syntax enable                           " Enables syntax highlighing
+set hidden                              " Required to keep multiple buffers open multiple buffers
+set nowrap                              " Display long lines as just one line
+set encoding=utf-8                      " The encoding displayed
+set pumheight=10                        " Makes popup menu smaller
+set fileencoding=utf-8                  " The encoding written to file
+set ruler              			            " Show the cursor position all the time
+set iskeyword+=-                      	" treat dash separated words as a word text object"
+set mouse=a                             " Enable your mouse
+set splitbelow                          " Horizontal splits will automatically be below
+set splitright                          " Vertical splits will automatically be to the right
+set t_Co=256                            " Support 256 colors
+set conceallevel=0                      " So that I can see `` in markdown files
+set tabstop=2                           " Insert 2 spaces for a tab
+set shiftwidth=2                        " Change the number of space characters inserted for indentation
+set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
+set expandtab                           " Converts tabs to spaces
+set smartindent                         " Makes indenting smart
+set autoindent                          " Good auto indent
+set laststatus=0                        " Always display the status line
+set number                              " Line numbers
+set cursorline                          " Enable highlighting of the current line
+set background=dark                     " tell vim what the background color looks like
+set showtabline=2                       " Always show tabs
+set noshowmode                          " We don't need to see things like -- INSERT -- anymore
+set nobackup                            " This is recommended by coc
+set nowritebackup                       " This is recommended by coc
+set updatetime=300                      " Faster completion
+set timeoutlen=500                      " By default timeoutlen is 1000 ms
+set formatoptions-=cro                  " Stop newline continution of comments
+set clipboard=unnamedplus               " Copy paste between vim and everything else
+set title                               " Muestra el título del archivo 
+set number                              " Mostrar el número de la línea
+set numberwidth=1                       " Que hace esto?
+set splitbelow                          " Coloca la terminal integrada abajo
+set termguicolors                       " Configuracion para que el tema funcione bien
+set relativenumber                      " Ver la relatividad de las lineas
+set showcmd                             " Ver la posición del cursor, linea y caracter
+set laststatus=2                        " To display the status line always
