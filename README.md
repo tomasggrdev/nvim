@@ -1,10 +1,7 @@
 <!--Neovim images-->
 ![Plugins](https://user-images.githubusercontent.com/17545760/118346342-5c69d800-b500-11eb-9cb3-ddfde45480c7.png)
 ![Settings](https://user-images.githubusercontent.com/17545760/118346343-5e339b80-b500-11eb-95ee-43ba4714fdb4.png)
-<<<<<<< HEAD
-=======
 
->>>>>>> f191a912c749a302bbc75c49460a1e5896077f50
 # Neovim configuration
 
 This repository has been created in order to help people guide themselves.
@@ -38,10 +35,18 @@ cd ~/.config/
 git clone https://github.com/edwz-dev/nvim 
 ```
 
-Install plugin manager
-
-```bash
+Install plugin manager in ~/.config/neovim
 Use the package manager [vim-plug](https://www.google.com/search?q=vim-plug&oq=vim-plug&aqs=chrome..69i57j0l6j69i60.2592j0j4&sourceid=chrome&ie=UTF-8)
+
+Then, execute neovim in nvim folder.
+```bash
+nvim init.vim
+
+# When you stay in the root folder
+`:PlugInstall`
+
+Wait for the plugins to download and install and execute
+`:q!`
 ```
 
 ## Contributing
