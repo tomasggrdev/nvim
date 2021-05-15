@@ -1,8 +1,8 @@
+# Neovim configuration
+
 <!--Neovim images-->
 ![Plugins](https://user-images.githubusercontent.com/17545760/118346342-5c69d800-b500-11eb-9cb3-ddfde45480c7.png)
 ![Settings](https://user-images.githubusercontent.com/17545760/118346343-5e339b80-b500-11eb-95ee-43ba4714fdb4.png)
-
-# Neovim configuration
 
 This repository was created to share my neovim configuration.
 
