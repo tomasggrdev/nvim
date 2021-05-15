@@ -49,6 +49,12 @@ Wait for the plugins to download and install and execute
 `:q!`
 ```
 
+| Plugin | Shortcut|
+| ------------- |:-------------:|
+| col 3 is      | right-aligned |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
