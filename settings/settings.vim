@@ -40,11 +40,10 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-set title                               " Muestra el título del archivo 
-set number                              " Mostrar el número de la línea
-set numberwidth=1                       " Que hace esto?
-set splitbelow                          " Coloca la terminal integrada abajo
-set termguicolors                       " Configuracion para que el tema funcione bien
-set relativenumber                      " Ver la relatividad de las lineas
-set showcmd                             " Ver la posición del cursor, linea y caracter
+set title                               " Show title bar
+set number                              " Show number of the list 
+set numberwidth=1                       " Change column width
+set termguicolors                       " Themes
+set relativenumber                      " View current position of the line
+set showcmd                             " View the status line
 set laststatus=2                        " To display the status line always

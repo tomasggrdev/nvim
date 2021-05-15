@@ -11,8 +11,8 @@
 " Github : https://github.com/edwz-dev
 
 call plug#begin('~/.vim/plugged')                                 
-Plug 'vimlab/split-term.vim'                                      " Split term => Deploy a terminal inside neo.
-Plug 'preservim/nerdcommenter'                                    " Nerdcommenter => This allows us to create comments.
+Plug 'vimlab/split-term.vim'                                      " Split term => Deploy a terminal inside neovim.
+Plug 'preservim/nerdcommenter'                                    " Nerdcommenter => Allows to create comments.
 Plug 'morhetz/gruvbox'                                            " Gruvbox => Theme for neovim.
 Plug 'easymotion/vim-easymotion'                                  " Vim easymotion => Find words in the document.
 Plug 'preservim/nerdtree'                                         " Nerdtree => File manager.
@@ -24,7 +24,7 @@ Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}   " Bracey vim =
 Plug 'prettier/vim-prettier', {                                   
   \ 'do': 'npm install',
   \ 'branch': 'release/0.x'
-  \ }                                                             " Prettier => It allows us to organize the code.
+  \ }                                                             " Prettier => Allows to organize code.
 Plug 'junegunn/rainbow_parentheses.vim'                           " Rainbow parentheses => parenthesis colors.
 Plug 'mattn/emmet-vim'                                            " Emmet Vim => snippets html5.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                   " Coc nvim=> CocInstall coc-html coc-tsserver coc-json coc-css => autocomplete.
