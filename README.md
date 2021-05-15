@@ -1,6 +1,6 @@
 <!--Neovim images-->
-![alt text](https://drive.google.com/file/d/1IsF3EKpifY6JKg1Cvsrkhns_ieJBKnbP/view?usp=sharing)
-![alt text](https://drive.google.com/file/d/1p5AuQOALigdfDs_2ZWjsS4e39NGiB1Ds/view?usp=sharing)
+![Neovim plugins](https://imgur.com/TanQgAx)
+![Neovim settings](https://imgur.com/kiRTasg)
 
 # Neovim configuration
 
