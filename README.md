@@ -1,28 +1,43 @@
 <!--Neovim images-->
-![Neovim plugins](https://imgur.com/TanQgAx)
-![Neovim settings](https://imgur.com/kiRTasg)
-
+![Plugins](https://user-images.githubusercontent.com/17545760/118346342-5c69d800-b500-11eb-9cb3-ddfde45480c7.png)
+![Settings](https://user-images.githubusercontent.com/17545760/118346343-5e339b80-b500-11eb-95ee-43ba4714fdb4.png)
 # Neovim configuration
 
 This repository has been created in order to help people guide themselves.
 
 ## Installation
 
-<!--Use the package manager [pip](https://drive.google.com/file/d/1IsF3EKpifY6JKg1Cvsrkhns_ieJBKnbP/view?usp=sharing) to install foobar.-->
-First of all we need to create the folder that stores our configurations
+To use this config, first download some dependencies:
+
+Innstall dependencies depending on your operating system.
 
 ```bash
-cd ~/.config/
+# Node JS and NPM
+sudo pacman -S nodejs npm
+
+# Python and Python-pip
+sudo pacman -S python python-pip
+
+# Download neovim packages
+sudo pacman -S neovim xsel
+pip install pynvim
+
 ```
 
-## Usage
+Clone the repository.
 
-```python
-import foobar
+```bash
+# Go to your settings folder
+cd ~/.config/
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+# Now, clone the repository
+git clone https://github.com/edwz-dev/nvim 
+```
+
+Install plugin manager
+
+```bash
+Use the package manager [vim-plug](https://www.google.com/search?q=vim-plug&oq=vim-plug&aqs=chrome..69i57j0l6j69i60.2592j0j4&sourceid=chrome&ie=UTF-8)
 ```
 
 ## Contributing
