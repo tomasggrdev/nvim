@@ -24,6 +24,8 @@ let g:gruvbox_contrast_dark = 'hard'
 set bg=dark
 
 " <<----------- Nerdtree ------------>
+" Hidden files
+let NERDTreeShowHidden=1
 " Close nerdtree when we close a file 
 let NERDTreeQuitOnOpen=1
 " Automatic reload when creating files 
