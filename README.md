@@ -1,13 +1,18 @@
-# Foobar
+<!--Neovim images-->
+![alt text](https://drive.google.com/file/d/1IsF3EKpifY6JKg1Cvsrkhns_ieJBKnbP/view?usp=sharing)
+![alt text](https://drive.google.com/file/d/1p5AuQOALigdfDs_2ZWjsS4e39NGiB1Ds/view?usp=sharing)
 
-Foobar is a Python library for dealing with word pluralization.
+# Neovim configuration
+
+This repository has been created in order to help people guide themselves.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+<!--Use the package manager [pip](https://drive.google.com/file/d/1IsF3EKpifY6JKg1Cvsrkhns_ieJBKnbP/view?usp=sharing) to install foobar.-->
+First of all we need to create the folder that stores our configurations
 
 ```bash
-pip install foobar
+cd ~/.config/
 ```
 
 ## Usage
