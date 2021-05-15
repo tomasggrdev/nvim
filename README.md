@@ -4,20 +4,20 @@
 
 # Neovim configuration
 
-This repository was created to share my neovim config.
+This repository was created to share my neovim configuration.
 
 ## Installation
 
-To use this config, first download some dependencies:
+To use this configuration, first download some dependencies:
 
 Install dependencies depending on your operating system.
 
-Node JS and NPM
+NodeJs and npm 
 ```bash
 sudo pacman -S nodejs npm
 ```
 
-Python and Python-pip
+Python and python-pip
 ```bash
 sudo pacman -S python python-pip
 ```
@@ -32,19 +32,18 @@ Install python for neovim
 pip install pynvim
 ```
 
-Clone the repository.
-Go to your settings folder
+Go to your settings folder.
 
 ```bash
 cd ~/.config/
 ```
-Now, clone the repository
+Now, clone the repository.
 
 ```bash
 git clone https://github.com/edwz-dev/nvim 
 ```
 
-Install plugin manager here [vim-plug](https://www.google.com/search?q=vim-plug&oq=vim-plug&aqs=chrome..69i57j0l6j69i60.2592j0j4&sourceid=chrome&ie=UTF-8)
+Install plugin manager here [vim-plug](https://www.google.com/search?q=vim-plug&oq=vim-plug&aqs=chrome..69i57j0l6j69i60.2592j0j4&sourceid=chrome&ie=UTF-8).
 
 Then, execute neovim in nvim folder.
 
@@ -52,11 +51,13 @@ Then, execute neovim in nvim folder.
 nvim init.vim
 ```
 
-When you stay in the root folder
+When you have installed the vim-plug, execute.
 `:PlugInstall`
 
-Wait for the plugins to download and install and execute
+Wait for the plugins to download and install and execute.
 `:q!`
+
+Configuration completed, enjoy!
 
 Plugin keybindings:
 
