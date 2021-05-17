@@ -51,3 +51,4 @@ set laststatus=2                        " To display the status line always
 set textwidth=79
 set softtabstop=2
 set noshiftround
+"set splitright

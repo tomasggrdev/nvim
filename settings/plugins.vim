@@ -11,7 +11,6 @@
 " Github : https://github.com/edwz-dev
 
 call plug#begin('~/.vim/plugged')                                 
-Plug 'vimlab/split-term.vim'                                      " Split term => Deploy a terminal inside neovim.
 Plug 'preservim/nerdcommenter'                                    " Nerdcommenter => Allows to create comments.
 Plug 'morhetz/gruvbox'                                            " Gruvbox => Theme for neovim.
 Plug 'easymotion/vim-easymotion'                                  " Vim easymotion => Find words in the document.
