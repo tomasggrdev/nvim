@@ -12,8 +12,6 @@
 " <<----------------- Shortcuts -------------->
 " Leader key.
 let g:mapleader = "\<Space>"
-" Open tabs with nerdtree.
-let NERDTreeMapOpenInTab='<leader>t'
 " Shortcut for easymotion. 
 nmap <Leader>s <Plug>(easymotion-s2)
 " Copy to clipboard.
@@ -48,9 +46,6 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
-" <<---------------- CoC --------------------->
-noremap <leader>f :Files<cr>
 
 " <<---------------- Open tabs --------------->
 noremap <leader>1 1gt

@@ -38,7 +38,7 @@ set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
-"set formatoptions-=cro                  " Stop newline continution of comments
+set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set title                               " Show title bar
 set number                              " Show number of the list 
@@ -48,8 +48,6 @@ set relativenumber                      " View current position of the line
 set showcmd                             " View the status line
 set laststatus=2                        " To display the status line always
 
-
 set textwidth=79
-set formatoptions=tcqrn1
 set softtabstop=2
 set noshiftround
