@@ -21,7 +21,7 @@ vnoremap <C-c> "+y
 " Shortcut for nerdtree.
 nmap <Leader>n :NERDTreeFind<CR>
 " Shortcut for live server.
-nmap <Leader>b :Bracey<CR>
+nmap <Leader>o :Bracey<CR>
 " Delete searches.
 nmap <Leader>i :noh<CR>
 " Shortcut for save changes.
@@ -39,7 +39,20 @@ vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 nmap <Leader>p :Prettier<CR>
 imap <Leader>, <C-y>,
 
-" <<---------- Open tabs --------------------->
+" <<---------------- Multi cursors ----------->
+let g:VM_mouse_mappings = 1
+
+" <<---------------- CoC --------------------->
+noremap <leader>gs :CocSearch
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" <<---------------- CoC --------------------->
+noremap <leader>f :Files<cr>
+
+" <<---------------- Open tabs --------------->
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt

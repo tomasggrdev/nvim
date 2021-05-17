@@ -38,3 +38,11 @@ autocmd FileChangedShellPost *
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 autocmd FileType * RainbowParentheses
+
+
+" <<------------- CoC -------------->
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+

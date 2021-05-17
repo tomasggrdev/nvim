@@ -31,5 +31,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}                   " Coc nvim=> C
 Plug 'ap/vim-css-color'                                           " Vim CSS color => css colors.
 Plug 'ryanoasis/vim-devicons'                                     " Vim dev icons => Icons nerdtree.
 Plug 'mhinz/vim-signify', { 'branch': 'legacy' }                  " Vim signify => git status.
-Plug 'terryma/vim-multiple-cursors'                               " Vim multiple cursors.
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}               " Vim multiple cursors.
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }               " Fzf => Allows find files
+Plug 'junegunn/fzf.vim'
 call plug#end()
