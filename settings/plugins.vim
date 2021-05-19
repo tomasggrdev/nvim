@@ -32,4 +32,7 @@ Plug 'ryanoasis/vim-devicons'                                     " Vim dev icon
 Plug 'mhinz/vim-signify', { 'branch': 'legacy' }                  " Vim signify => git status.
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}               " Vim multiple cursors.
 Plug 'nathanaelkane/vim-indent-guides'
+" Fzf => files
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()

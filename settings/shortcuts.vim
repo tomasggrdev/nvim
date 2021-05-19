@@ -50,6 +50,10 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <F2> <Plug>(coc-rename)
 
+" <<-------------- FZF ----------------------->
+nmap <F3> :Windows<CR>
+nmap <F4> :Files<CR>
+
 tnoremap <Esc> <C-\><C-n>
 " <<---------------- Open tabs --------------->
 noremap <leader>1 1gt
