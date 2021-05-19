@@ -28,7 +28,7 @@ nmap <Leader>w :w!<CR>
 nmap <Leader>q :q!<CR>
 " Shortcut to open a terminal. 
 "map <F2> :0tabnew term://zsh<CR>
-map <F2> :0tabnew term://bash<CR>
+map <F1> :0tabnew term://bash<CR>
 tnoremap <Esc> <C-\><C-n>
 
 " <<----------------- Comments --------------->
@@ -48,7 +48,9 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <F2> <Plug>(coc-rename)
 
+tnoremap <Esc> <C-\><C-n>
 " <<---------------- Open tabs --------------->
 noremap <leader>1 1gt
 noremap <leader>2 2gt

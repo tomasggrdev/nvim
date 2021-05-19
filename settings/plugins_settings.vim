@@ -37,13 +37,8 @@ set bg=dark
 let NERDTreeShowHidden=1
 " Close nerdtree when we open a file 
 let NERDTreeQuitOnOpen=1
-" Automatic reload when creating files 
-set autoread
-autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
-autocmd FileChangedShellPost *
-\ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
 " <<---------- Rainbow ------------->
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
-autocmd FileType * RainbowParentheses
+
