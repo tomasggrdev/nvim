@@ -31,4 +31,5 @@ Plug 'ap/vim-css-color'                                           " Vim CSS colo
 Plug 'ryanoasis/vim-devicons'                                     " Vim dev icons => Icons nerdtree.
 Plug 'mhinz/vim-signify', { 'branch': 'legacy' }                  " Vim signify => git status.
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}               " Vim multiple cursors.
+Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
