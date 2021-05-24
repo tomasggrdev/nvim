@@ -13,7 +13,7 @@
 "Configuraciones automática
 " <<------------ Themes ------------->
 " Airline
-let g:airline_theme = 'gruvbox'
+let g:airline_theme = 'onehalfdark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
@@ -28,8 +28,7 @@ let g:airline#extensions#tabline#show_close_button = 0
 
 
 " Theme neovim - Gruvbox
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
+colorscheme onehalfdark
 set bg=dark
 
 " <<----------- Nerdtree ------------>
@@ -44,3 +43,17 @@ let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 " <<---------- Vim Indent ---------->
 let g:indent_guides_enable_on_vim_startup = 1
+
+" <<---------- Indent inteligence -->
+inoremap <expr> <CR> InsertMapForEnter()
+function! InsertMapForEnter()
+    if pumvisible()
+        return "\<C-y>"
+    elseif strcharpart(getline('.'),getpos('.')[2]-1,1) == '}'
+        return "\<CR>\<Esc>O"
+    elseif strcharpart(getline('.'),getpos('.')[2]-1,2) == '</'
+        return "\<CR>\<Esc>O"
+    else
+        return "\<CR>"
+    endif
+endfunction

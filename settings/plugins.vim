@@ -12,7 +12,7 @@
 
 call plug#begin('~/.vim/plugged')                                 
 Plug 'preservim/nerdcommenter'                                    " Nerdcommenter => Allows to create comments.
-Plug 'morhetz/gruvbox'                                            " Gruvbox => Theme for neovim.
+Plug 'sonph/onehalf', { 'rtp': 'vim' }                                            " Gruvbox => Theme for neovim.
 Plug 'easymotion/vim-easymotion'                                  " Vim easymotion => Find words in the document.
 Plug 'preservim/nerdtree'                                         " Nerdtree => File manager.
 Plug 'christoomey/vim-tmux-navigator'                             " Vim tmux navigator => Switch between windows.

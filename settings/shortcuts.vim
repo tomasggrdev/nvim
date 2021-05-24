@@ -27,8 +27,8 @@ nmap <Leader>w :w!<CR>
 " Shortcut for close files.
 nmap <Leader>q :q!<CR>
 " Shortcut to open a terminal. 
-"map <F2> :0tabnew term://zsh<CR>
-map <F1> :0tabnew term://bash<CR>
+map <F1> :0tabnew term://zsh<CR>
+"map <F1> :0tabnew term://bash<CR>
 tnoremap <Esc> <C-\><C-n>
 
 " <<----------------- Comments --------------->
